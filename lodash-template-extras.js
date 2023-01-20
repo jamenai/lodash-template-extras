@@ -92,7 +92,8 @@
 			return (tag == '${'? tag : (tag + '=')) + '_.templateEx.helper(\'' + name + '\',';
 		});
 
-		compile = _.template(compileText, {sourceURL: 'templates/'+name+'.html'});
+		//compile = _.template(compileText, {sourceURL: 'templates/'+name+'.html'});
+		compile = _.template(compileText);
 
 		templates[name] = {
 			text: text,
